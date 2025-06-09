@@ -67,6 +67,81 @@
 | 小程序/H5/移动端   | [aioveu-app](https://github.com/ambitiouschild/aioveu-app)   | [aioveu-app](https://github.com/ambitiouschild/aioveu-app)   | [aioveu-app](https://github.com/ambitiouschild/aioveu-app)   |
 | vue3-element-admin | aioveu-vue3-element-admin                                    |                                                              | -                                                            |
 
+## 📁目录结构
+
+```
+aioveu-admin
+├── node_modules                    # 项目依赖包
+├── public                          # 公共资源
+│   ├── favicon.ico                 # 网站图标
+│   └── index.html                  # 主入口HTML文件    
+├── src                             # 前端源代码
+│   ├── api                         # 接口
+│   ├── assets                      # 静态资源
+│   │   ├── images/                 # 图片资源
+│   │   ├── fonts/                  # 字体文件
+│   │   └── styles/                 # 全局样式
+│   ├── directive                   # 自定义指令
+│   ├── enums                       # 枚举定义
+│   ├── lang                        # 国际化语言包
+│   ├── layout                      # 布局组件
+│   ├── plugins                     # 插件
+│   ├── router                      # 路由配置
+│   ├── store                       # Vuex/Pinia状态管理
+│   ├── types                       # TypeScript类型定义
+│   ├── utils                       # 工具函数
+│   ├── views                       # 页面视图组件
+│   ├── App.vue                     # 根组件
+│   └── main.ts                     # 应用入口文件
+├── tests/                          # 测试目录
+├── .editorconfig                   # 编辑器配置
+├── .env                            # 基础环境变量
+├── .env.development                # 开发环境变量
+├── .env.production                 # 生产环境变量
+├── .eslintignore                   # ESLint忽略配置
+├── .eslintrc.cjs                   # ESLint配置
+├── .eslintrc-auto-import.json      # 自动导入配置
+├── .gitignore                      # git忽略文件
+├── .prettierignore                 # Prettier忽略配置
+├── .prettierrc.cjs                 # Prettier格式化配置
+├── .stylelintignore                # Stylelint忽略配置
+├── .stylelintrc.cjs                # Stylelint样式检查配置 
+├── commitlint.config.cjs           # CommitLint提交规范配置
+├── package.json                    # 项目配置和依赖管理
+├── vite.config.ts                  # Vite构建配置
+├── index.html                      # 项目入口HTML（通常放在根目录）
+├── tsconfig.json                   # 项目配置
+└── README.md                       # 项目说明文档
+└── end    
+```
+
+
+
+1. **关键文件补充**：
+   - `src/App.vue`：Vue应用根组件
+   - `src/main.ts`：应用入口文件
+   - `vite.config.ts`：Vite构建配置（Vue3推荐使用Vite）
+   - `tsconfig.json`：补充完整文件名
+2. **目录优化**：
+   - 新增 `src/components/` 存放公共组件
+   - 新增 `tests/` 目录用于单元测试
+   - `plugins/` 目录名修正拼写（原plgins）
+   - 细化 `assets/` 子目录分类
+3. **推荐补充**：
+   - `README.md`：项目文档
+   - `.env`：基础环境变量
+   - `index.html` 明确放在根目录
+4. **典型Vue3特征**：
+   - Vite作为构建工具（非webpack）
+   - TypeScript支持
+   - 现代工具链（ESLint+Prettier+Stylelint+Commitlint）
+
+此结构遵循Vue3官方推荐实践，同时保持了项目原有设计意图，适合中后台管理系统使用。
+
+
+
+
+
 ## 启动部署
 
 ### 环境准备
