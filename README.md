@@ -1,3 +1,5 @@
+# aioveu-admin
+
 <p align="center">
     <img src="https://img.shields.io/badge/Vue-3.3.4-brightgreen.svg"/>
     <img src="https://img.shields.io/badge/Vite-4.4.11-green.svg"/>
@@ -17,6 +19,7 @@
 <p align="center">
 <a target="_blank" href="http://admin.youlai.tech">在线预览</a> |  <a target="_blank" href="https://juejin.cn/post/7228990409909108793">官方文档</a> 
 </p>
+
 
 
 ## 项目介绍
@@ -132,3 +135,31 @@
 | 公众号                                                       | 交流群                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild/coding.gif " height="180px"> | <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild//images/可我不敌可爱公众号二维码2.jpg" height="180px"> |
+
+
+
+
+
+## Project setup
+
+```
+pnpm install
+```
+
+### Compiles and hot-reloads for development
+```
+pnpm run serve
+```
+
+### Compiles and minifies for production
+```
+pnpm run build
+```
+
+### Lints and fixes files
+```
+pnpm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
