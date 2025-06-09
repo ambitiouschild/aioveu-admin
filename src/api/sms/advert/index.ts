@@ -11,7 +11,7 @@ export function getAdvertPage(
   queryParams: AdvertQuery
 ): AxiosPromise<AdvertPageResult> {
   return request({
-    url: "/mall-sms/api/v1/adverts/page",
+    url: "/aioveu-sms/api/v1/adverts/page",
     method: "get",
     params: queryParams,
   });
@@ -24,7 +24,7 @@ export function getAdvertPage(
  */
 export function getAdvertForm(id: number): AxiosPromise<AdvertForm> {
   return request({
-    url: "/mall-sms/api/v1/adverts/" + id,
+    url: "/aioveu-sms/api/v1/adverts/" + id,
     method: "get",
   });
 }
@@ -36,7 +36,7 @@ export function getAdvertForm(id: number): AxiosPromise<AdvertForm> {
  */
 export function addAdvert(data: AdvertForm) {
   return request({
-    url: "/mall-sms/api/v1/adverts",
+    url: "/aioveu-sms/api/v1/adverts",
     method: "post",
     data: data,
   });
@@ -50,7 +50,7 @@ export function addAdvert(data: AdvertForm) {
  */
 export function updateAdvert(id: number, data: AdvertForm) {
   return request({
-    url: "/mall-sms/api/v1/adverts/" + id,
+    url: "/aioveu-sms/api/v1/adverts/" + id,
     method: "put",
     data: data,
   });
@@ -63,7 +63,7 @@ export function updateAdvert(id: number, data: AdvertForm) {
  */
 export function deleteAdverts(ids: string) {
   return request({
-    url: "/mall-sms/api/v1/adverts/" + ids,
+    url: "/aioveu-sms/api/v1/adverts/" + ids,
     method: "delete",
   });
 }

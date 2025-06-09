@@ -105,10 +105,10 @@
     <!-- ICP备案 -->
     <div class="absolute bottom-1 text-[10px] text-center" v-show="icpVisible">
       <p>
-        Copyright © 2019 - 2024 youlai.tech All Rights Reserved. 有来技术
+        Copyright © 2019 - 2025 aioveu.com All Rights Reserved. 可我不敌可爱
         版权所有
       </p>
-      <p>皖ICP备20006496号-1</p>
+      <p>沪ICP备2025114708号-1</p>
     </div>
   </div>
 </template>

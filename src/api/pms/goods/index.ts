@@ -11,7 +11,7 @@ export function getSpuPage(
   queryParams: GoodsQuery
 ): AxiosPromise<GoodsPageResult> {
   return request({
-    url: "/mall-pms/api/v1/spu/page",
+    url: "/aioveu-pms/api/v1/spu/page",
     method: "get",
     params: queryParams,
   });
@@ -24,7 +24,7 @@ export function getSpuPage(
  */
 export function getSpuDetail(id: string): AxiosPromise<GoodsDetail> {
   return request({
-    url: "/mall-pms/api/v1/spu/" + id + "/detail",
+    url: "/aioveu-pms/api/v1/spu/" + id + "/detail",
     method: "get",
   });
 }
@@ -36,7 +36,7 @@ export function getSpuDetail(id: string): AxiosPromise<GoodsDetail> {
  */
 export function addSpu(data: object) {
   return request({
-    url: "/mall-pms/api/v1/spu",
+    url: "/aioveu-pms/api/v1/spu",
     method: "post",
     data: data,
   });
@@ -50,7 +50,7 @@ export function addSpu(data: object) {
  */
 export function updateSpu(id: number, data: object) {
   return request({
-    url: "/mall-pms/api/v1/spu/" + id,
+    url: "/aioveu-pms/api/v1/spu/" + id,
     method: "put",
     data: data,
   });
@@ -63,7 +63,7 @@ export function updateSpu(id: number, data: object) {
  */
 export function deleteSpu(ids: string) {
   return request({
-    url: "/mall-pms/api/v1/spu/" + ids,
+    url: "/aioveu-pms/api/v1/spu/" + ids,
     method: "delete",
   });
 }

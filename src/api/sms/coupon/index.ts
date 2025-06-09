@@ -11,7 +11,7 @@ export function getCouponPage(
   queryParams: CouponQuery
 ): AxiosPromise<CouponPageResult> {
   return request({
-    url: "/mall-sms/api/v1/coupons/page",
+    url: "/aioveu-sms/api/v1/coupons/page",
     method: "get",
     params: queryParams,
   });
@@ -24,7 +24,7 @@ export function getCouponPage(
  */
 export function getCouponForm(id: number): AxiosPromise<CouponForm> {
   return request({
-    url: "/mall-sms/api/v1/coupons/" + id + "/form_data",
+    url: "/aioveu-sms/api/v1/coupons/" + id + "/form_data",
     method: "get",
   });
 }
@@ -36,7 +36,7 @@ export function getCouponForm(id: number): AxiosPromise<CouponForm> {
  */
 export function addCoupon(data: CouponForm) {
   return request({
-    url: "/mall-sms/api/v1/coupons",
+    url: "/aioveu-sms/api/v1/coupons",
     method: "post",
     data: data,
   });
@@ -50,7 +50,7 @@ export function addCoupon(data: CouponForm) {
  */
 export function updateCoupon(id: number, data: CouponForm) {
   return request({
-    url: "/mall-sms/api/v1/coupons/" + id,
+    url: "/aioveu-sms/api/v1/coupons/" + id,
     method: "put",
     data: data,
   });
@@ -63,7 +63,7 @@ export function updateCoupon(id: number, data: CouponForm) {
  */
 export function deleteCoupons(ids: string) {
   return request({
-    url: "/mall-sms/api/v1/coupons/" + ids,
+    url: "/aioveu-sms/api/v1/coupons/" + ids,
     method: "delete",
   });
 }

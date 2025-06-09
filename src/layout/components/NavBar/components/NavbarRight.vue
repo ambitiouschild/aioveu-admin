@@ -30,7 +30,7 @@
         <el-dropdown-menu>
           <a
             target="_blank"
-            href="https://gitee.com/youlaiorg/vue3-element-admin"
+            href="https://gitee.com/aioveuorg/vue3-element-admin"
           >
             <el-dropdown-item>项目地址</el-dropdown-item>
           </a>

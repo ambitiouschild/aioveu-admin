@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Editor from "@/components/WangEditor/index.vue";
+import Editor from "@/components/WangEditor.vue";
 
 // API 依赖
 import { getBrandList } from "@/api/pms/brand";

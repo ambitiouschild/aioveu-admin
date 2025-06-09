@@ -5,10 +5,10 @@
     <img src="https://img.shields.io/badge/Vite-4.4.11-green.svg"/>
     <img src="https://img.shields.io/badge/Element Plus-2.4.2-blue.svg"/>
     <a src="https://github.com/hxrui" target="_blank">
-        <img src="https://img.shields.io/github/stars/youlaitech/youlai-mall.svg?style=social&label=Stars"/>
+        <img src="https://img.shields.io/github/stars/aioveutech/aioveu-mall.svg?style=social&label=Stars"/>
     </a>
-    <a href="https://gitee.com/youlaitech/youlai-mall" target="_blank">
-        <img src="https://gitee.com/youlaitech/youlai-mall/badge/star.svg"/>
+    <a href="https://gitee.com/aioveutech/aioveu-mall" target="_blank">
+        <img src="https://gitee.com/aioveutech/aioveu-mall/badge/star.svg"/>
     </a> 
     <br/>
     <img src="https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg"/>
@@ -17,14 +17,14 @@
     </a>
 </p>
 <p align="center">
-<a target="_blank" href="http://admin.youlai.tech">在线预览</a> |  <a target="_blank" href="https://juejin.cn/post/7228990409909108793">官方文档</a> 
+<a target="_blank" href="http://admin.aioveu.tech">在线预览</a> |  <a target="_blank" href="https://juejin.cn/post/7228990409909108793">官方文档</a> 
 </p>
 
 
 
 ## 项目介绍
 
-[aioveu-admin](https://github.com/ambitiouschild/aioveu-admin) 是基于 [vue3-element-admin](https://gitee.com/youlaiorg/vue3-element-admin) 升级的 Vue3 版本有来商城管理前端工程；使用前端主流技术栈 Vue3 + Vite4 + TypeScript5 + Vue Router + Pinia + Volar + Element Plus 等；实现功能包括不限于动态权限路由、按钮权限控制、国际化、主题大小切换等。
+[aioveu-admin](https://github.com/ambitiouschild/aioveu-admin) 是基于 [vue3-element-admin](https://gitee.com/aioveuorg/vue3-element-admin) 升级的 Vue3 版本有来商城管理前端工程；使用前端主流技术栈 Vue3 + Vite4 + TypeScript5 + Vue Router + Pinia + Volar + Element Plus 等；实现功能包括不限于动态权限路由、按钮权限控制、国际化、主题大小切换等。
 
 ## 项目优势
 
@@ -49,12 +49,12 @@
 
 ## 项目预览
 
-在线预览地址: [admin.youlai.tech](http://admin.youlai.tech)
+在线预览地址: [admin.aioveu.tech](http://admin.aioveu.tech)
 
-| ![控制台](https://www.youlai.tech/files/blog/dashboard.png) | ![国际化](https://www.youlai.tech/files/blog/i18n.gif)    |
+| ![控制台](https://www.aioveu.tech/files/blog/dashboard.png) | ![国际化](https://www.aioveu.tech/files/blog/i18n.gif)    |
 | ----------------------------------------------------------- | --------------------------------------------------------- |
-| ![菜单管理](https://www.youlai.tech/files/blog/menu.png)    | ![角色管理](https://www.youlai.tech/files/blog/role.png)  |
-| ![商品管理](https://www.youlai.tech/files/blog/goods.png)   | ![库存设置](https://www.youlai.tech/files/blog/stock.png) |
+| ![菜单管理](https://www.aioveu.tech/files/blog/menu.png)    | ![角色管理](https://www.aioveu.tech/files/blog/role.png)  |
+| ![商品管理](https://www.aioveu.tech/files/blog/goods.png)   | ![库存设置](https://www.aioveu.tech/files/blog/stock.png) |
 
 ## 项目地址
 
@@ -305,6 +305,17 @@ aioveu-admin/
 
 
 
+## [基于 vite 创建](推荐)
+
+`vite` 是新一代前端构建工具，官网地址：[https://vitejs.cn](https://vitejs.cn/)，`vite`的优势如下：
+
+- 轻量快速的热重载（`HMR`），能实现极速的服务启动。
+- 对 `TypeScript`、`JSX`、`CSS` 等支持开箱即用。
+- 真正的按需编译，不再等待整个应用编译完成。
+- `webpack`构建 与 `vite`构建对比图如下：
+
+
+
 ## 区别：
 
 1、TS对JS进行了扩展，向JS中引入了类型的概念，并添加了许多新的特性。
@@ -374,7 +385,7 @@ aioveu-admin/
       location /prod-api/ {
           proxy_set_header X-Real-IP $remote_addr;
           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-          proxy_pass https://api.youlai.tech/;
+          proxy_pass https://api.aioveu.tech/;
       }
   }
   

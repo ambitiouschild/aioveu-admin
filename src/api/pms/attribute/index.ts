@@ -7,7 +7,7 @@ import request from "@/utils/request";
  */
 export function getAttributeList(params: object) {
   return request({
-    url: "/mall-pms/api/v1/attributes",
+    url: "/aioveu-pms/api/v1/attributes",
     method: "get",
     params: params,
   });
@@ -20,7 +20,7 @@ export function getAttributeList(params: object) {
  */
 export function saveAttributeBatch(data: object) {
   return request({
-    url: "/mall-pms/api/v1/attributes/batch",
+    url: "/aioveu-pms/api/v1/attributes/batch",
     method: "post",
     data: data,
   });

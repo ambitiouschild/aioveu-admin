@@ -8,7 +8,7 @@ import { AxiosPromise } from "axios";
  */
 export function listCategories(queryParams: object) {
   return request({
-    url: "/mall-pms/api/v1/categories",
+    url: "/aioveu-pms/api/v1/categories",
     method: "get",
     params: queryParams,
   });
@@ -21,7 +21,7 @@ export function listCategories(queryParams: object) {
  */
 export function getCategoryOptions(): AxiosPromise<OptionType[]> {
   return request({
-    url: "/mall-pms/api/v1/categories/options",
+    url: "/aioveu-pms/api/v1/categories/options",
     method: "get",
   });
 }
@@ -33,7 +33,7 @@ export function getCategoryOptions(): AxiosPromise<OptionType[]> {
  */
 export function getCategoryDetail(id: number) {
   return request({
-    url: "/mall-pms/api/v1/categories/" + id,
+    url: "/aioveu-pms/api/v1/categories/" + id,
     method: "get",
   });
 }
@@ -45,7 +45,7 @@ export function getCategoryDetail(id: number) {
  */
 export function addCategory(data: object) {
   return request({
-    url: "/mall-pms/api/v1/categories",
+    url: "/aioveu-pms/api/v1/categories",
     method: "post",
     data: data,
   });
@@ -59,7 +59,7 @@ export function addCategory(data: object) {
  */
 export function updateCategory(id: number, data: object) {
   return request({
-    url: "/mall-pms/api/v1/categories/" + id,
+    url: "/aioveu-pms/api/v1/categories/" + id,
     method: "put",
     data: data,
   });
@@ -72,7 +72,7 @@ export function updateCategory(id: number, data: object) {
  */
 export function deleteCategories(ids: string) {
   return request({
-    url: "/mall-pms/api/v1/categories/" + ids,
+    url: "/aioveu-pms/api/v1/categories/" + ids,
     method: "delete",
   });
 }
@@ -85,7 +85,7 @@ export function deleteCategories(ids: string) {
  */
 export function updateCategoryPart(id: number, data: object) {
   return request({
-    url: "/mall-pms/api/v1/categories/" + id,
+    url: "/aioveu-pms/api/v1/categories/" + id,
     method: "patch",
     data: data,
   });

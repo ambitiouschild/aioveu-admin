@@ -1,7 +1,7 @@
 <!-- 文件上传组件(单图+多图)示例 -->
 <script setup lang="ts">
 const singlePicUrl = ref(
-  "https://oss.youlai.tech/youlai-boot/2023/05/20/2b6d8b49fa1047348a0a41cef5aaf69e.gif"
+  "https://oss.aioveu.tech/aioveu-boot/2023/05/20/2b6d8b49fa1047348a0a41cef5aaf69e.gif"
 );
 // 这里放外链图片，防止被删
 const multiPicUrls = ref([
@@ -15,7 +15,7 @@ const multiPicUrls = ref([
 <template>
   <div class="app-container">
     <el-link
-      href="https://gitee.com/youlaiorg/mall-admin/blob/master/src/views/demo/upload.vue"
+      href="https://gitee.com/aioveuorg/aioveu-admin/blob/master/src/views/demo/upload.vue"
       type="primary"
       target="_blank"
       class="mb-10"

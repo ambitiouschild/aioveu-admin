@@ -1,9 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
 import router from "@/router";
 import { setupStore } from "@/store";
-import { setupDirective } from "@/directive";
+import { setupDirective } from "./directive";
 import { setupElIcons, setupI18n, setupPermission } from "@/plugins";
+import { createPinia } from "pinia";
 
 // 本地SVG图标
 import "virtual:svg-icons-register";
@@ -14,8 +15,8 @@ import "@/styles/index.scss";
 import "uno.css";
 import "animate.css";
 
-
 const app = createApp(App);
+const pinia = createPinia();
 // 全局注册 自定义指令(directive)
 setupDirective(app);
 // 全局注册 状态管理(store)
@@ -26,5 +27,5 @@ setupElIcons(app);
 setupI18n(app);
 // 注册动态路由
 setupPermission();
+app.use(pinia);
 app.use(router).mount("#app");
-createApp(App).mount('#app')

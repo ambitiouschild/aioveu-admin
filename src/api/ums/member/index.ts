@@ -11,7 +11,7 @@ export function getMemberPage(
   queryParams: MemberQuery
 ): AxiosPromise<MemberPageResult> {
   return request({
-    url: "/mall-ums/api/v1/members",
+    url: "/aioveu-ums/api/v1/members",
     method: "get",
     params: queryParams,
   });
@@ -24,7 +24,7 @@ export function getMemberPage(
  */
 export function getMemberDetail(id: number) {
   return request({
-    url: "/mall-ums/api/v1/members/" + id,
+    url: "/aioveu-ums/api/v1/members/" + id,
     method: "get",
   });
 }
@@ -36,7 +36,7 @@ export function getMemberDetail(id: number) {
  */
 export function addMember(data: object) {
   return request({
-    url: "/mall-ums/api/v1/members",
+    url: "/aioveu-ums/api/v1/members",
     method: "post",
     data: data,
   });
@@ -50,7 +50,7 @@ export function addMember(data: object) {
  */
 export function updateMember(id: number, data: object) {
   return request({
-    url: "/mall-ums/api/v1/members/" + id,
+    url: "/aioveu-ums/api/v1/members/" + id,
     method: "put",
     data: data,
   });

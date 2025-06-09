@@ -1,6 +1,7 @@
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import { UserConfig, ConfigEnv, loadEnv, defineConfig } from "vite";
+import sass from "sass";
 
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
@@ -43,7 +44,12 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       preprocessorOptions: {
         // 定义全局 SCSS 变量
         scss: {
+          implementation: sass, // 使用 Dart Sass
           javascriptEnabled: true,
+          sassOptions: {
+            // 隐藏弃用警告
+            quietDeps: true,
+          },
           additionalData: `
             @use "@/styles/variables.scss" as *;
           `,

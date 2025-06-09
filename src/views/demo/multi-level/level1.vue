@@ -1,7 +1,7 @@
 <template>
   <div style="padding: 30px">
     <el-link
-      href="https://gitee.com/youlaiorg/mall-admin/blob/master/src/views/demo/multi-level/level1.vue"
+      href="https://gitee.com/aioveuorg/aioveu-admin/blob/master/src/views/demo/multi-level/level1.vue"
       type="primary"
       target="_blank"
       class="mb-10"

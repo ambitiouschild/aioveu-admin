@@ -1,4 +1,5 @@
 import defaultSettings from "@/settings";
+import { defineStore } from "pinia";
 
 // 导入 Element Plus 中英文语言包
 import zhCn from "element-plus/es/locale/lang/zh-cn";

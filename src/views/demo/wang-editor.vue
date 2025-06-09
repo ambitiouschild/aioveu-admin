@@ -1,13 +1,13 @@
 <!-- wangEditor富文本编辑器示例 -->
 <script setup lang="ts">
-import Editor from "@/components/WangEditor/index.vue";
+import Editor from "@/components/WangEditor.vue";
 const value = ref("初始内容");
 </script>
 
 <template>
   <div class="app-container">
     <el-link
-      href="https://gitee.com/youlaiorg/mall-admin/blob/master/src/views/demo/wang-editor.vue"
+      href="https://gitee.com/aioveuorg/aioveu-admin/blob/master/src/views/demo/wang-editor.vue"
       type="primary"
       target="_blank"
       class="mb-[20px]"
