@@ -44,7 +44,8 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       preprocessorOptions: {
         // 定义全局 SCSS 变量
         scss: {
-          implementation: sass, // 使用 Dart Sass
+           // 在 Vite 配置中使用了动态 require 来加载 Sass，而 ES 模块环境不支持动态 require。我们需要调整 Vite 配置中 Sass 的引入方式。
+          implementation: sass,
           javascriptEnabled: true,
           sassOptions: {
             // 隐藏弃用警告
