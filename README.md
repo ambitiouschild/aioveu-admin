@@ -412,9 +412,9 @@ aioveu-admin/
 >
 > 为了避免营销广告人群混入，此举无奈，望理解！
 
-| 公众号                                                       | 交流群                                                       |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild/coding.gif " height="180px"> | <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild//images/可我不敌可爱公众号二维码2.jpg" height="180px"> |
+| 公众号                                                       | 交流群                                                                                                                  |
+| ------------------------------------------------------------ |----------------------------------------------------------------------------------------------------------------------|
+| <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild/images/ambitiouschild_Public_Platform.jpg" height="180px"> | <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild/images/ambitiouschild_group.jpg" height="300px"> |
 
 
 
